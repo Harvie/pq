@@ -1,0 +1,15 @@
+author: Tomas 'Harvie' Mudrunka 2020
+description: Parallel queues
+type: lib
+version: 0.1
+
+platforms: [ esp32, esp8266 ]
+
+sources:
+  - src
+includes:
+  - src
+
+config_schema:
+
+manifest_version: 2019-07-28
