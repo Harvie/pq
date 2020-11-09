@@ -1,6 +1,7 @@
 # Parallel event loop queue module for Mongoose OS
 
 > Wow! It's literally like running ten Mongooses on single machine. Simply Fantastic!
+>
 > ~~ Nikola Tesla
 
 ## Quick explanation
@@ -17,7 +18,7 @@ It looks like this from user perspective:
   //Configure some basic parameters
   pq_handle pqh; //PQH = Parallel Queue Handle
     pq_set_defaults(&pqh);
-    demo_pqh.name = "MyPQTask";
+    pqh.name = "MyPQTask";
     pqh.prio = MGOS_TASK_PRIORITY+1;
     pqh.idle_interval_ms = 6000;
     pqh.idle_cb = idle_cb;
